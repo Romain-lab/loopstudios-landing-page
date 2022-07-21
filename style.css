@@ -56,4 +56,66 @@ body p {
   font-family: "Alata", sans-serif;
 }
 
+.container {
+  padding: 10rem;
+}
+
+.vr {
+  position: relative;
+}
+.vr__bg {
+  background-image: url("images/desktop/image-interactive.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  width: 70%;
+}
+.vr__content {
+  padding: 6rem 0 0 6rem;
+  width: 45%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  background-color: var(--white);
+}
+.vr__content__title {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 1.1;
+  color: var(--black);
+  font-weight: normal;
+}
+.vr__content__description {
+  margin-top: 2rem;
+  line-height: 1.6;
+  color: var(--verydarkgray);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+
+.creations {
+  margin: 10rem 0;
+}
+.creations__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.creations__top__btn {
+  padding: 0.5rem 2rem;
+  background-color: var(--black);
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: 4px;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style.css.map */

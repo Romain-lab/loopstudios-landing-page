@@ -58,3 +58,65 @@ body {
     }
   }
 }
+
+.container {
+  padding: 10rem;
+}
+
+.vr {
+  position: relative;
+  &__bg {
+    background-image: url("images/desktop/image-interactive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 70%;
+  }
+  &__content {
+    padding: 6rem 0 0 6rem;
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    background-color: var(--white);
+    &__title {
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      font-size: 45px;
+      line-height: 1.1;
+      color: var(--black);
+      font-weight: normal;
+    }
+    &__description {
+      margin-top: 2rem;
+      line-height: 1.6;
+      color: var(--verydarkgray);
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: bold;
+    }
+  }
+}
+
+.creations {
+  margin: 10rem 0;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    &__btn {
+      padding: .5rem 2rem;
+      background-color: var(--black);
+      text-decoration: none;
+      color: var(--white);
+      text-transform: uppercase;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: bold;
+      letter-spacing: 4px;
+      vertical-align: baseline;
+      display: inline-block;
+    }
+  }
+}
