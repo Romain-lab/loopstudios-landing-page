@@ -6,15 +6,55 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --darkgray: hsl(0, 0%, 55%);
+  --verydarkgray: hsl(0, 0%, 41%);
+}
+
 body {
   p {
     font-size: 15px;
   }
 }
 
-:root {
-  --white: hsl(0, 0%, 100%);
-  --black: hsl(0, 0%, 0%);
-  --darkgray: hsl(0, 0%, 55%);
-  --verydarkgray: hsl(0, 0%, 41%);
+.hero {
+  background-image: url("images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 10rem;
+  &__slogan {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    padding: 2rem 2.5rem;
+    border: 2px solid var(--white);
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+    line-height: 1;
+    width: 650px;
+    color: var(--white);
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+      height: 34px;
+    }
+    &__links {
+      display: flex;
+      list-style-type: none;
+      a {
+        text-decoration: none;
+      }
+      &__link {
+        color: var(--white);
+        margin-right: 2rem;
+        font-family: 'Alata', sans-serif;
+      }
+    }
+  }
 }
