@@ -52,7 +52,7 @@ body {
       }
       &__link {
         color: var(--white);
-        margin-right: 2rem;
+        margin-left: 2rem;
         font-family: 'Alata', sans-serif;
       }
     }
@@ -236,9 +236,24 @@ body {
   padding: 3rem 10rem;
   display: flex;
   justify-content: space-between;
-  &__logo {
-    margin-bottom: 1.5rem;
-    height: 25px;
+  &__links {
+    &__logo {
+      margin-bottom: 1.5rem;
+      height: 25px;
+    }
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      a {
+        text-decoration: none;
+      }
+      &__link {
+        color: var(--white);
+        margin-right: 2rem;
+        font-family: 'Alata', sans-serif;
+      }
+    }
   }
   &__copyright {
     text-align: right;
