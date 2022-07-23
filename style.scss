@@ -54,6 +54,20 @@ body {
         color: var(--white);
         margin-left: 2rem;
         font-family: 'Alata', sans-serif;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 50%;
+          height: 0px;
+          bottom: -10px;
+          left: 50%;
+          transform: translate(-50%);
+          background-color: var(--white);
+        }
+        &:hover::after {
+          height: 2px;
+        }
       }
     }
   }
@@ -118,6 +132,10 @@ body {
       letter-spacing: 4px;
       vertical-align: baseline;
       display: inline-block;
+      &:hover {
+        background-color: var(--black);
+        color: var(--white);
+      }
     }
   }
   &__container {
@@ -142,7 +160,12 @@ body {
       bottom: 0;
       position: absolute;
       width: 100%;
-      height: 200px;
+      height: 100%;
+      &:hover {
+        background-image: none;
+        background-color: var(--white);
+        opacity: 0.7;
+      }
     }
     &__earth {
       background-image: url("images/desktop/image-deep-earth.jpg");
@@ -153,6 +176,11 @@ body {
       height: 500px;
       position: relative;
       cursor: pointer;
+      &:hover {
+        h1 {
+          color: var(--black);
+        }
+      }
     }
     &__night {
       background-image: url("images/desktop/image-night-arcade.jpg");
@@ -163,6 +191,11 @@ body {
       height: 500px;
       position: relative;
       cursor: pointer;
+      &:hover {
+        h1 {
+          color: var(--black);
+        }
+      }
     }
     &__soccer {
       background-image: url("images/desktop/image-soccer-team.jpg");
@@ -173,6 +206,11 @@ body {
       height: 500px;
       position: relative;
       cursor: pointer;
+      &:hover {
+        h1 {
+          color: var(--black);
+        }
+      }
     }
     &__grid {
       background-image: url("images/desktop/image-grid.jpg");
@@ -183,6 +221,11 @@ body {
       height: 500px;
       position: relative;
       cursor: pointer;
+      &:hover {
+        h1 {
+          color: var(--black);
+        }
+      }
     }
     &__vr {
       background-image: url("images/desktop/image-from-above.jpg");
@@ -194,6 +237,11 @@ body {
       position: relative;
       margin-top: 2rem;
       cursor: pointer;
+      &:hover {
+        h1 {
+          color: var(--black);
+        }
+      }
     }
     &__borealis {
       background-image: url("images/desktop/image-pocket-borealis.jpg");
@@ -205,6 +253,11 @@ body {
       position: relative;
       margin-top: 2rem;
       cursor: pointer;
+      &:hover {
+        h1 {
+          color: var(--black);
+        }
+      }
     }
     &__curiosity {
       background-image: url("images/desktop/image-curiosity.jpg");
@@ -216,6 +269,11 @@ body {
       position: relative;
       margin-top: 2rem;
       cursor: pointer;
+      &:hover {
+        h1 {
+          color: var(--black);
+        }
+      }
     }
     &__fisheye {
       background-image: url("images/desktop/image-fisheye.jpg");
@@ -227,6 +285,11 @@ body {
       position: relative;
       margin-top: 2rem;
       cursor: pointer;
+      &:hover {
+        h1 {
+          color: var(--black);
+        }
+      }
     }
   }
 }
@@ -252,6 +315,20 @@ body {
         color: var(--white);
         margin-right: 2rem;
         font-family: 'Alata', sans-serif;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 50%;
+          height: 0px;
+          bottom: -10px;
+          left: 50%;
+          transform: translate(-50%);
+          background-color: var(--white);
+        }
+        &:hover::after {
+          height: 2px;
+        }
       }
     }
   }
@@ -259,12 +336,17 @@ body {
     text-align: right;
     &__text {
       color: var(--darkgray);
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       font-family: "Alata", sans-serif;
     }
     &__icon {
       cursor: pointer;
       margin-left: .5rem;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid rgba(0,0,0,0);
+      &:hover {
+        border-bottom: 2px solid var(--white);
+      }
     }
   }
 }

@@ -54,6 +54,20 @@ body p {
   color: var(--white);
   margin-left: 2rem;
   font-family: "Alata", sans-serif;
+  position: relative;
+}
+.hero__menu__links__link::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 0px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--white);
+}
+.hero__menu__links__link:hover::after {
+  height: 2px;
 }
 
 .container {
@@ -118,6 +132,10 @@ body p {
   vertical-align: baseline;
   display: inline-block;
 }
+.creations__top__btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
 .creations__container {
   display: flex;
   flex-wrap: wrap;
@@ -141,7 +159,12 @@ body p {
   bottom: 0;
   position: absolute;
   width: 100%;
-  height: 200px;
+  height: 100%;
+}
+.creations__container__blackbg:hover {
+  background-image: none;
+  background-color: var(--white);
+  opacity: 0.7;
 }
 .creations__container__earth {
   background-image: url("images/desktop/image-deep-earth.jpg");
@@ -153,6 +176,9 @@ body p {
   position: relative;
   cursor: pointer;
 }
+.creations__container__earth:hover h1 {
+  color: var(--black);
+}
 .creations__container__night {
   background-image: url("images/desktop/image-night-arcade.jpg");
   background-repeat: no-repeat;
@@ -162,6 +188,9 @@ body p {
   height: 500px;
   position: relative;
   cursor: pointer;
+}
+.creations__container__night:hover h1 {
+  color: var(--black);
 }
 .creations__container__soccer {
   background-image: url("images/desktop/image-soccer-team.jpg");
@@ -173,6 +202,9 @@ body p {
   position: relative;
   cursor: pointer;
 }
+.creations__container__soccer:hover h1 {
+  color: var(--black);
+}
 .creations__container__grid {
   background-image: url("images/desktop/image-grid.jpg");
   background-repeat: no-repeat;
@@ -182,6 +214,9 @@ body p {
   height: 500px;
   position: relative;
   cursor: pointer;
+}
+.creations__container__grid:hover h1 {
+  color: var(--black);
 }
 .creations__container__vr {
   background-image: url("images/desktop/image-from-above.jpg");
@@ -194,6 +229,9 @@ body p {
   margin-top: 2rem;
   cursor: pointer;
 }
+.creations__container__vr:hover h1 {
+  color: var(--black);
+}
 .creations__container__borealis {
   background-image: url("images/desktop/image-pocket-borealis.jpg");
   background-repeat: no-repeat;
@@ -204,6 +242,9 @@ body p {
   position: relative;
   margin-top: 2rem;
   cursor: pointer;
+}
+.creations__container__borealis:hover h1 {
+  color: var(--black);
 }
 .creations__container__curiosity {
   background-image: url("images/desktop/image-curiosity.jpg");
@@ -216,6 +257,9 @@ body p {
   margin-top: 2rem;
   cursor: pointer;
 }
+.creations__container__curiosity:hover h1 {
+  color: var(--black);
+}
 .creations__container__fisheye {
   background-image: url("images/desktop/image-fisheye.jpg");
   background-repeat: no-repeat;
@@ -226,6 +270,9 @@ body p {
   position: relative;
   margin-top: 2rem;
   cursor: pointer;
+}
+.creations__container__fisheye:hover h1 {
+  color: var(--black);
 }
 
 .footer {
@@ -250,18 +297,37 @@ body p {
   color: var(--white);
   margin-right: 2rem;
   font-family: "Alata", sans-serif;
+  position: relative;
+}
+.footer__links__menu__link::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 0px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--white);
+}
+.footer__links__menu__link:hover::after {
+  height: 2px;
 }
 .footer__copyright {
   text-align: right;
 }
 .footer__copyright__text {
   color: var(--darkgray);
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-family: "Alata", sans-serif;
 }
 .footer__copyright__icon {
   cursor: pointer;
   margin-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.footer__copyright__icon:hover {
+  border-bottom: 2px solid var(--white);
 }
 
 .copyright {
