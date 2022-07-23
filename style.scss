@@ -152,6 +152,7 @@ body {
       width: 23%;
       height: 500px;
       position: relative;
+      cursor: pointer;
     }
     &__night {
       background-image: url("images/desktop/image-night-arcade.jpg");
@@ -161,6 +162,7 @@ body {
       width: 23%;
       height: 500px;
       position: relative;
+      cursor: pointer;
     }
     &__soccer {
       background-image: url("images/desktop/image-soccer-team.jpg");
@@ -170,7 +172,7 @@ body {
       width: 23%;
       height: 500px;
       position: relative;
-      background-color: rgba(117, 190, 218, 0.5);
+      cursor: pointer;
     }
     &__grid {
       background-image: url("images/desktop/image-grid.jpg");
@@ -180,6 +182,7 @@ body {
       width: 23%;
       height: 500px;
       position: relative;
+      cursor: pointer;
     }
     &__vr {
       background-image: url("images/desktop/image-from-above.jpg");
@@ -190,6 +193,7 @@ body {
       height: 500px;
       position: relative;
       margin-top: 2rem;
+      cursor: pointer;
     }
     &__borealis {
       background-image: url("images/desktop/image-pocket-borealis.jpg");
@@ -200,6 +204,7 @@ body {
       height: 500px;
       position: relative;
       margin-top: 2rem;
+      cursor: pointer;
     }
     &__curiosity {
       background-image: url("images/desktop/image-curiosity.jpg");
@@ -210,6 +215,7 @@ body {
       height: 500px;
       position: relative;
       margin-top: 2rem;
+      cursor: pointer;
     }
     &__fisheye {
       background-image: url("images/desktop/image-fisheye.jpg");
@@ -220,6 +226,42 @@ body {
       height: 500px;
       position: relative;
       margin-top: 2rem;
+      cursor: pointer;
     }
+  }
+}
+
+.footer {
+  background-color: var(--black);
+  padding: 3rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    margin-bottom: 1.5rem;
+    height: 25px;
+  }
+  &__copyright {
+    text-align: right;
+    &__text {
+      color: var(--darkgray);
+      margin-top: 1.5rem;
+      font-family: "Alata", sans-serif;
+    }
+    &__icon {
+      cursor: pointer;
+      margin-left: .5rem;
+    }
+  }
+}
+
+.copyright {
+  background-color: var(--black);
+  text-align: center;
+  color: var(--white);
+  font-family: "Josefin Sans", sans-serif;
+  padding: 1rem;
+  font-size: 14px;
+  a {
+    text-decoration: none;
   }
 }
