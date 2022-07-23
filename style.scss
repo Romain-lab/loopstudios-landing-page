@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-  padding: 10rem;
+  padding: 10rem 10rem 0 10rem;
 }
 
 .vr {
@@ -105,18 +105,121 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     &__btn {
-      padding: .5rem 2rem;
-      background-color: var(--black);
+      padding: .7rem 2rem;
+      background-color: var(--white);
+      border: 2px solid var(--black);
       text-decoration: none;
-      color: var(--white);
+      color: var(--black);
       text-transform: uppercase;
       font-family: "Josefin Sans", sans-serif;
       font-weight: bold;
       letter-spacing: 4px;
       vertical-align: baseline;
       display: inline-block;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__title {
+      position: absolute;
+      color: var(--white);
+      bottom: 2rem;
+      left: 2.5rem;
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 2px;
+      z-index: 3;
+    }
+    &__blackbg {
+      z-index: 2;
+      background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+      opacity: 0.5;
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      height: 200px;
+    }
+    &__earth {
+      background-image: url("images/desktop/image-deep-earth.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 23%;
+      height: 500px;
+      position: relative;
+    }
+    &__night {
+      background-image: url("images/desktop/image-night-arcade.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 23%;
+      height: 500px;
+      position: relative;
+    }
+    &__soccer {
+      background-image: url("images/desktop/image-soccer-team.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 23%;
+      height: 500px;
+      position: relative;
+      background-color: rgba(117, 190, 218, 0.5);
+    }
+    &__grid {
+      background-image: url("images/desktop/image-grid.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 23%;
+      height: 500px;
+      position: relative;
+    }
+    &__vr {
+      background-image: url("images/desktop/image-from-above.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 23%;
+      height: 500px;
+      position: relative;
+      margin-top: 2rem;
+    }
+    &__borealis {
+      background-image: url("images/desktop/image-pocket-borealis.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 23%;
+      height: 500px;
+      position: relative;
+      margin-top: 2rem;
+    }
+    &__curiosity {
+      background-image: url("images/desktop/image-curiosity.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 23%;
+      height: 500px;
+      position: relative;
+      margin-top: 2rem;
+    }
+    &__fisheye {
+      background-image: url("images/desktop/image-fisheye.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 23%;
+      height: 500px;
+      position: relative;
+      margin-top: 2rem;
     }
   }
 }
