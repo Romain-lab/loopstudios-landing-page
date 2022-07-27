@@ -151,6 +151,9 @@ body p {
   background-color: var(--black);
   color: var(--white);
 }
+.creations__bottom__btn {
+  display: none;
+}
 .creations__container {
   display: flex;
   flex-wrap: wrap;
@@ -372,10 +375,17 @@ body p {
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
     left: 50%;
-    font-size: 23px;
+  }
+  .hero__menu__logo {
+    height: 38px;
+  }
+  .hero__menu__links {
+    display: none;
   }
   .hero__menu__hamburger {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .vr {
     display: flex;
@@ -385,20 +395,146 @@ body p {
   .vr__content {
     position: static;
     width: 100%;
-    padding: 2rem;
+    padding: 0;
     text-align: center;
+    margin-top: 3.5rem;
   }
   .vr__content__title {
-    font-size: 30px;
+    font-size: 40px;
   }
   .vr__content__description {
     font-size: 20px;
+    padding: 0 1rem;
   }
   .vr__bg {
     width: 100%;
+    background-image: url("images/mobile/image-interactive.jpg");
+    height: 350px;
   }
   .container {
-    padding: 10rem 2rem;
+    padding: 8rem 2rem;
+  }
+  .creations {
+    margin-bottom: 0;
+  }
+  .creations__container {
+    flex-direction: column;
+  }
+  .creations__container__earth {
+    width: 100%;
+    height: 150px;
+    background-image: url("images/mobile/image-deep-earth.jpg");
+  }
+  .creations__container__night {
+    width: 100%;
+    height: 150px;
+    margin-top: 2rem;
+    background-image: url("images/mobile/image-night-arcade.jpg");
+  }
+  .creations__container__soccer {
+    width: 100%;
+    height: 150px;
+    margin-top: 2rem;
+    background-image: url("images/mobile/image-soccer-team.jpg");
+  }
+  .creations__container__grid {
+    width: 100%;
+    height: 150px;
+    margin-top: 2rem;
+    background-image: url("images/mobile/image-grid.jpg");
+  }
+  .creations__container__vr {
+    width: 100%;
+    height: 150px;
+    background-image: url("images/mobile/image-from-above.jpg");
+  }
+  .creations__container__borealis {
+    width: 100%;
+    height: 150px;
+    background-image: url("images/mobile/image-pocket-borealis.jpg");
+  }
+  .creations__container__curiosity {
+    width: 100%;
+    height: 150px;
+    background-image: url("images/mobile/image-pocket-borealis.jpg");
+  }
+  .creations__container__fisheye {
+    width: 100%;
+    height: 150px;
+    background-image: url("images/mobile/image-fisheye.jpg");
+  }
+  .creations__container__title {
+    bottom: 1rem;
+    left: 1rem;
+    width: 60%;
+  }
+  .creations__top {
+    margin-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .creations__top__btn {
+    display: none;
+  }
+  .creations__bottom {
+    display: flex;
+    justify-content: center;
+  }
+  .creations__bottom__btn {
+    padding: 1rem 4rem;
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    text-decoration: none;
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 3rem;
+  }
+  .footer {
+    padding: 5rem 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__links__menu {
+    flex-direction: column;
+  }
+  .footer__links__menu__link {
+    margin: 1rem 0;
+    display: inline-block;
+    font-size: 25px;
+  }
+  .footer__links__logo {
+    height: 38px;
+    margin-bottom: 2rem;
+  }
+  .footer__copyright {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .footer__copyright__icon {
+    width: 30px;
+    margin-right: 1rem;
+  }
+  .footer__copyright__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .hero__slogan__text {
+    font-size: 35px;
+  }
+  .vr__content__title {
+    font-size: 35px;
+  }
+  .creations__bottom__btn {
+    font-size: 20px;
+  }
+  .footer__copyright__text {
+    font-size: 17px;
   }
 }
 
